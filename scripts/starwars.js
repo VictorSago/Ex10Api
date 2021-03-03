@@ -21,11 +21,11 @@ searchField.addEventListener("keyup", function(event) {
 function fetchBio() {
     if (searchField.value) {
         let uri = "https://www.swapi.tech/api/people/?name=" + searchField.value;
-        console.log(uri);
+        // console.log(uri);
         fetch(uri)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
+            // console.log(data);
             let output = "";
             if (data.result.length > 0) {
                 data.result.forEach(item => {
