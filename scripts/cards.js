@@ -36,10 +36,10 @@ function getCard() {
             cardHeader.innerText = cardName;
 
             // Card image
-            const imgElement = document.createElement('img');
-            imgElement.setAttribute('src', imgSrc);
-            imgElement.classList.add('card-img');
-            imgElement.setAttribute('alt', `Picture of the ${cardName}`);
+            const cardImage = document.createElement('img');
+            cardImage.setAttribute('src', imgSrc);
+            cardImage.classList.add('card-img');
+            cardImage.setAttribute('alt', `Picture of the ${cardName}`);
             
             // Body of the card div element
             const cardBody = document.createElement('div');
@@ -56,7 +56,7 @@ function getCard() {
 
             // Add new HTML to the card container
             cardPictureSpace.appendChild(cardHeader);
-            cardPictureSpace.appendChild(imgElement);
+            cardPictureSpace.appendChild(cardImage);
             cardPictureSpace.appendChild(cardBody);
         })
         .catch((err) => {
