@@ -21,6 +21,7 @@ function getCard() {
             console.log(imgSrc);
             const imgElement = document.createElement('img');
             imgElement.setAttribute('src', imgSrc);
+            cardPictureSpace.textContent = '';
             cardPictureSpace.appendChild(imgElement);
         })
         .catch((err) => {
